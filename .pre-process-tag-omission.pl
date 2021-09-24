@@ -28,7 +28,7 @@ while (defined($_ = <>)) {
         } elsif ($_ eq "   <dt><dfn>Void elements</dfn></dt>\n") {
             $mode = 'voids';
         } elsif ($_ =~ m!<code>([^<]+)</code></dfn> elements?</h4>!
-          || $_ =~ m!id="the-[^-]+-element"[^>]*>The <dfn[^>]*><code>([^<]+)</code>!) {
+          || $_ =~ m!id="the-[^-]+-element"[^>]*><dfn[^>]*><code>([^<]+)</code>!) {
             $current = $1;
             $mode = 'element';
         }
