@@ -22,7 +22,7 @@ function main {
   cd "$TMP_DIR"
   trap cleanTemp EXIT
 
-  local docker_hub_repo="whatwg/html-build"
+  local docker_hub_repo="flyin1501/html-build"
 
   # Build the Docker image, using Docker Hub as a cache. (This will be fast if nothing has changed
   # in html-build or its dependencies).
