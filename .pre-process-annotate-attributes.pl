@@ -11,7 +11,7 @@ my %instances = ();
 while (defined($_ = <>)) {
     my $line = \"$_";
     push(@lines, $line);
-    if ($_ eq "  <h3 class=\"no-num\">Attributes</h3>\n") {
+    if ($_ eq "  <h3 class=\"no-num\">屬性</h3>\n") {
          $mode = 'index';
     } else {
         if ($mode eq 'bored') {
